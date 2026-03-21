@@ -46,6 +46,7 @@ body {
     height: 24px;
     width: 24px;
 }
+
 #lab-btn {
     background: none;
     border: none;
@@ -57,6 +58,7 @@ body {
     justify-content: center;
     border-radius: 50%;
 }
+
 #lab-btn img {
     height: 20px;
     width: 20px;
@@ -90,8 +92,9 @@ main {
 .search-bar {
     background-color: #4e5257;
     display: flex;
-    padding: 12px;
-    width: 660px;
+    padding: 6px;
+    width: 90%;
+    max-width: 660px;
     border-radius: 50px;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +102,10 @@ main {
 
 .search-bar:hover {
     background-color: #606469;
+}
+
+.search-bar-right {
+    flex-shrink: 0;
 }
 
 .search-bar-right,
@@ -115,7 +122,7 @@ input {
     color: white;
     font-size: 20px;
     flex: 1;
-    width: 400px;
+    min-width: 0;
 }
 
 .sub-header-search-bar {
